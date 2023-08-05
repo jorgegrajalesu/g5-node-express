@@ -24,6 +24,11 @@ app.get('/right-sidebar', (req, res) => {
     // res, para dar una repuesta de petición al usuario
     res.sendFile(__dirname + '/public/right-sidebar.html');
 })
+app.get('*', (req, res) => {
+    // el comidin o *, en éste caso, si la pagina no existe, va a retornar 404.html 
+
+    res.sendFile(__dirname + '/public/404.html');
+})
 
 
 
