@@ -30,5 +30,12 @@ app.get('*', (req, res) => {
     res.sendFile(__dirname + '/public/404.html');
 })
 
+// activar el puerto para el webserver con un listen, con una función de flecha
+app.listen(puerto,()=>{
+    // imprimir en la consola, si se activo con éxito el webserver
+    console.log(`El webserver esta activo en el puerto ${puerto}`);
+
+
+})
 
 
