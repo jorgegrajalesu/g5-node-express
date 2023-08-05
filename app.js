@@ -10,7 +10,12 @@ const puerto = 7475;
 
 app.use(express.static('public'));
 
+// para crear las rutas de las páginas web, se utiliza el metodo get
 
+app.get('/left-sidebar', (req, res) => {
+    // res, para dar una repuesta de petición al usuario
+    res.sendFile(__dirname + '/public/left-sidebar.html');
+})
 
 
 
