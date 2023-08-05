@@ -5,3 +5,12 @@ const express = require('express');
 const app = express();
 // para activar el puerto
 const puerto = 7475;
+
+// para mostrar los archivos de la carpeta public, utiliza metodo use
+
+app.use(express.static('public'));
+
+
+
+
+
